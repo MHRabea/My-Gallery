@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Progressbar from "./progress";
 
 const Upload = () => {
   const [file, setFile] = useState(null);
@@ -21,7 +22,7 @@ const Upload = () => {
   };
 
   return (
-    <form action="">
+    <form action="" className="upload-form">
       <input
         type="file"
         id="upload"
@@ -35,11 +36,13 @@ const Upload = () => {
         +
       </label>
       <div className="output">
-        {err && (
-          <div className="error">
-           {err}
+        {err && <div className="error">{err}</div>}
+        {file && (
+          <div className="d-flex justify-content-center file-name">
+            {file.name}
           </div>
         )}
+        {file && <Progressbar file={file} setFile={setFile} />}
       </div>
     </form>
   );

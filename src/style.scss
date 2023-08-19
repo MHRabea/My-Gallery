@@ -1,24 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Preahvihear&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Preahvihear&display=swap");
 .flex-column {
-    
-
-    .btn-circle{
-        height: 30px;
-        width: 30px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        padding: 10px;
-        gap: 20px;
-}
+  .btn-circle {
+    height: 30px;
+    width: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    gap: 20px;
+  }
   margin: 20px;
   padding: 10px;
   gap: 10px;
@@ -32,10 +27,27 @@
 
 .navbar-expand-lg {
   .container-fluid {
-
     .navbar-brand {
-        font-family: Pacifico;
+      font-family: Pacifico;
       color: black;
+    }
+  }
+}
+
+.upload-form {
+  .output {
+    .file-name {
+      padding: 10px;
+    }
+    .progress {
+      width: 100%;
+      height: 20px;
+      .progress-bar {
+        height: 100%;
+      }
+      .upload-message {
+        font-size: large;
+      }
     }
   }
 }
