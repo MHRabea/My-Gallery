@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Progressbar from "./progress";
 
+
 const Upload = () => {
   const [file, setFile] = useState(null);
   const [err, setErr] = useState(null);
 
-  const types = ["image/png", "image/jpeg"];
+  const types = ["image/png", "image/jpeg", "images/jpg"];
 
   const handleUpload = (e) => {
     const uploadedFile = e.target.files[0];
