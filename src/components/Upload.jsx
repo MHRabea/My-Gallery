@@ -14,7 +14,7 @@ const Upload = () => {
     if (uploadedFile && types.includes(uploadedFile.type)) {
       setFile(uploadedFile);
       setErr(null);
-      console.log("uploaded", uploadedFile);
+
     } else {
       setFile(null);
       setErr("image type unsupported please use (png or jpeg)");
